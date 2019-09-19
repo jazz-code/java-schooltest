@@ -35,7 +35,7 @@ public class CourseController
         return new ResponseEntity<>(courseService.getCountStudentsInCourse(), HttpStatus.OK);
     }
 
-    @PostMapping(value = "/courses/course/add",
+    @PostMapping(value = "/course/add",
             consumes = {"application/json"},
             produces = {"application/json"})
     public ResponseEntity<?> addNewCourse(@Valid
